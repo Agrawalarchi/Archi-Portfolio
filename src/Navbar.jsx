@@ -1,24 +1,16 @@
 import { Link } from "react-scroll";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./Navbar.css";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
 
   const closeMenu = () => setIsMenuOpen(false);
 
-  useEffect(() => {
-    const onScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  
 
   return (
-    <nav className={"navbar" + (isScrolled ? " sticky" : "") }>
+    <nav className="navbar">
       <div className="profileInfo">
         <div className="info">
           <img src="/Archi2.jpg" alt="Profile" />

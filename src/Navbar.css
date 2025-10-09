@@ -6,16 +6,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 3rem;
-    position: relative; /* default - not sticky until scrolled */
-    top: auto;
+    padding-right: 1rem; /* reduce right gap */
+    position: sticky; /* always part of top layer */
+    top: 0.1px; /* occupy top layer at page top */
     z-index: 10;
     background: linear-gradient(to right, #101725, black);
-}
-
-.navbar.sticky{
-    position: sticky;
-    top: 0;
 }
 .profileInfo{
     display: flex;
@@ -74,12 +69,12 @@
 /* Hamburger button - hidden on large screens */
 .hamburger{
     display: none;
-    height: 2rem;
-    width: 2.25rem;
+    height: 1.6rem; /* smaller */
+    width: 1.8rem;  /* smaller */
     background: transparent;
     border: none;
     padding: 0;
-    margin-right: 0.5rem;
+    margin-right: 0; /* flush to right */
 }
 .hamburger:hover,
 .hamburger:focus,
@@ -93,10 +88,10 @@
 }
 .hamburger span{
     display: block;
-    height: 2px;
+    height: 1.5px; /* thinner */
     width: 100%;
     background: #ffffff;
-    margin: 6px 0;
+    margin: 4px 0; /* tighter */
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 .hamburger.active span{
@@ -118,6 +113,9 @@
         display: block;
         outline: none;
         box-shadow: none;
+    }
+    .navbar{
+        padding-right: 0.5rem; /* further reduce gap on small screens */
     }
     /* Compact profile info on mobile */
     .profileInfo{
