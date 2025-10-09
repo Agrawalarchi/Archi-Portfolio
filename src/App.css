@@ -1,11 +1,14 @@
   #root {
     max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 2rem 2rem 2rem; /* remove top padding to avoid top-heavy look */
+    margin: 0px;
+    padding: 0px; /* remove top padding to avoid top-heavy look */
     text-align: center;
   }
 
-  
+  .app{
+    height: fit-content;
+    width: 100%;
+  }
 
   .logo {
     height: 6em;

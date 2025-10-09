@@ -6,7 +6,7 @@ import Project from "./Project.jsx";
 import Contact from "./Contact.jsx";
 export default function App() {
   return (
-    <>
+    <div className="app">
       <Navbar/>
       <Home />
       <Skills
@@ -31,6 +31,6 @@ export default function App() {
       <Project/>
 
       <Contact/>
-    </>
+    </div>
   );
 }

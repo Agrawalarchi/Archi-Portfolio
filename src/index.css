@@ -23,8 +23,8 @@ a:hover {
 
 body {
   margin: 0;
-  overflow-x: hidden;
-  width: full;
+  overflow-x: hidden; /* prevent accidental horizontal scroll */
+  width: 100%;
 }
 
 h1 {

@@ -7,10 +7,12 @@
     justify-content: space-between;
     align-items: center;
     padding-right: 1rem;
-    position: sticky; /* always part of top layer */
-    top: 0.1px; /* occupy top layer at page top */
+    position: sticky;
+    box-sizing: border-box; /* always part of top layer */
+    top: 0px; /* occupy top layer at page top */
     z-index: 10;
     background: linear-gradient(to right, #101725, black);
+    width: 100%;
 }
 .profileInfo{
     display: flex;
@@ -115,9 +117,14 @@
         box-shadow: none;
     }
     .navbar{
-        padding-right: 0.5rem; /* further reduce gap on small screens */
+        padding-right: 0.5rem;
+        background: linear-gradient(to right, #101725, black);
+        position: fixed; /* keep header pinned to prevent jump */
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw; /* ensure full width on small screens */
     }
-    /* Compact profile info on mobile */
     .profileInfo{
         padding-left: 1rem;
     }

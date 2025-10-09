@@ -1,4 +1,6 @@
 .homePage{
     height: 100vh;
+    box-sizing: border-box;
     width: 100%;
+    padding-top: 4.5rem; /* offset fixed navbar height on small screens */
 }
