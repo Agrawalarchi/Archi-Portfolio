@@ -5,7 +5,8 @@ export default function Project() {
     <div className="wrapper" id="projects">
         <h2 className="head">Project</h2>
         <section className="projects" id="projects">
-      <div className="project">
+
+      <a className="project" href="https://gaming-arena-neon.vercel.app/"  target="_blank" >
         <h2 className="project-title">Gaming Arena</h2>
         <div className="video">
           <video
@@ -24,10 +25,10 @@ export default function Project() {
           <li className="project-tech-item">css</li>
           <li className="project-tech-item">JavaScript</li>
         </ul>
-      </div>
+      </a>
 
 
-      <div className="project">
+      <a className="project"  href="https://weather-api-alpha-puce.vercel.app/" target="_blank">
         <h2 className="project-title">Weather App</h2>
         <div className="video">
           <video
@@ -46,9 +47,9 @@ export default function Project() {
           <li className="project-tech-item">API</li>
           <li className="project-tech-item">CSS</li>
         </ul>
-      </div>
+      </a>
 
-      <div className="project">
+      <a className="project" href="https://currency-converter-tau-five-40.vercel.app/"  target="_blank" >
         <h2 className="project-title">Currency Converter</h2>
         <div className="video">
           <video
@@ -67,9 +68,9 @@ export default function Project() {
           <li className="project-tech-item">API</li>
           <li className="project-tech-item">CSS</li>
         </ul>
-      </div>
+      </a>
 
-      <div className="project">
+      <a className="project"  href="https://to-do-gilt-gamma.vercel.app/"  target="_blank">
         <h2 className="project-title">To-Do App</h2>
         <div className="video">
           <video
@@ -88,11 +89,11 @@ export default function Project() {
           <li className="project-tech-item">Hooks</li>
           <li className="project-tech-item">CSS</li>
         </ul>
-      </div>
+      </a>
 
       
 
-      <div className="project">
+      <a className="project" href="https://lottery-ticket-teal.vercel.app/" target="_blank">
         <h2 className="project-title">Lottery Game</h2>
         <div className="video">
           <video
@@ -111,10 +112,10 @@ export default function Project() {
           <li className="project-tech-item">Hooks</li>
           <li className="project-tech-item">CSS</li>
         </ul>
-      </div>
+      </a>
 
 
-      <div className="project">
+      <a className="project" href="https://rock-paper-scissors-vert-theta.vercel.app/"  target="_blank">
         <h2 className="project-title">Rock paper Scissor</h2>
         <div className="video">
           <video
@@ -133,9 +134,9 @@ export default function Project() {
           <li className="project-tech-item">css</li>
           <li className="project-tech-item">JavaScript</li>
         </ul>
-      </div>
+      </a>
 
-      <div className="project">
+      <a className="project" href="https://tick-tac-toe-kappa.vercel.app/"  target="_blank">
         <h2 className="project-title">Tic Tac Toe</h2>
         <div className="video">
           <video
@@ -154,7 +155,7 @@ export default function Project() {
           <li className="project-tech-item">css</li>
           <li className="project-tech-item">JavaScript</li>
         </ul>
-      </div>
+      </a>
 
     </section>
     </div>
