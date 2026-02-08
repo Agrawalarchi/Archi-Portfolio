@@ -48,7 +48,7 @@
 }
 
 .contact-item {
-  color: white;
+  color:white;  /*white text*/
   display: flex;
   align-items: center;
   margin: 0.5rem 1rem;
