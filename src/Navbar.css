@@ -1,0 +1,201 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar{
+    height:4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+    position: sticky;
+    box-sizing: border-box; /* always part of top layer */
+    top: 0px; /* occupy top layer at page top */
+    z-index: 10;
+    background: linear-gradient(to right, #101725, black);
+    width: 100%;
+}
+.profileInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+    }
+ .info {
+    
+    height: 3rem;
+    width: 3rem;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     border: 0.2rem solid black;
+}   
+
+.info img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+    }
+
+.info:hover{
+    border: 0.2rem solid blue;
+   
+    cursor: pointer;
+}
+#name{
+       padding: 1rem;
+       font-size: 2.3rem;
+       font-weight:400;
+       color: white;
+}
+
+.navbar .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+
+.navbar .button{
+    font-size: 1rem;
+     padding-right: 1rem;
+     font-weight:400;
+     background: black;
+    cursor: pointer;
+}
+
+/* Hamburger button - hidden on large screens */
+.hamburger{
+    display: none;
+    height: 1.6rem; /* smaller */
+    width: 1.8rem;  /* smaller */
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin-right: 0; /* flush to right */
+}
+.hamburger:hover,
+.hamburger:focus,
+.hamburger:focus-visible,
+.hamburger:active{
+    outline: none;
+    border: none;
+    border-color: transparent;
+    box-shadow: none;
+    background: transparent;
+}
+.hamburger span{
+    display: block;
+    height: 1.5px; /* thinner */
+    width: 70%; /* shorter lines */
+    background: #ffffff;
+    margin: 4px auto; /* center horizontally */
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.hamburger.active span{
+    background: red; /* bars turn red when active */
+}
+.hamburger.active span:nth-child(1){
+    transform: translateY(6px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3){
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Mobile menu styles */
+@media screen and (max-width: 780px) {
+    .hamburger{
+        display: block;
+        outline: none;
+        box-shadow: none;
+    }
+    .navbar{
+        padding-right: 0.5rem;
+        background: linear-gradient(to right, #101725, black);
+        position: fixed; /* keep header pinned to prevent jump */
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw; /* ensure full width on small screens */
+    }
+    .profileInfo{
+        padding-left: 1rem;
+    }
+    .info{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .info img{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    #name{
+        font-size: 1.4rem;
+        padding: 0.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 50vw;
+    }
+    .navbar .buttons{
+        position: fixed;
+        top: 4.5rem; /* below navbar */
+        left: 0;
+        right: 0;
+        height: 50vh; /* half screen height */
+        display: none;
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 1.25rem 1rem 2rem 1rem;
+        background: linear-gradient(to bottom, #0b0f1b, #000);
+        border-top: 1px solid rgba(255,255,255,0.08);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+        overflow-y: auto;
+        z-index: 2;
+    }
+    .navbar .buttons.open{
+        display: flex;
+    }
+    .navbar .button{
+        background: rgba(255, 255, 255, 0.04);
+        padding: 0.95rem 1.2rem;
+        font-size: 1.08rem;
+        color: #fff;
+        border: 1px solid rgba(255,255,255,0.12);
+        border-radius: 10px;
+        margin: 0 1rem;
+        width: 80%;
+        max-width: 520px;
+        align-self: center;
+        transition: background 0.15s ease, border-color 0.15s ease, transform 0.05s ease;
+    }
+    .navbar .button:hover{
+        background: rgba(255, 0, 0, 0.15);
+        border-color: rgba(255, 0, 0, 0.5);
+    }
+    .navbar .button:active{
+        transform: scale(0.98);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #name{
+        font-size: 1.2rem;
+        max-width: 45vw;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #name{
+        font-size: 1rem;
+        max-width: 40vw;
+    }
+}
