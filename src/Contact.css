@@ -1,0 +1,124 @@
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  margin-top: 4rem;
+}
+.headh2{
+ width: fit-content;
+  text-align: center;
+  font-size: 2rem;
+  color: #f6f5f3; 
+  margin: 0;
+  border-bottom: 3px solid white;
+  padding:0 0.5rem;
+  margin-bottom: 1rem;
+
+}
+.contact-text {
+  width: 60%;
+  color: white;
+  text-align: justify;
+  padding: 3rem;
+  font-size: 14px;
+}
+
+.contact-footer {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #1f2937, #111827);
+  padding: 2.5rem 0;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  flex-wrap: nowrap;
+}
+
+.contact-item {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 1rem;
+  text-align: center;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.contact-item a {
+  margin-left: 0.25rem;
+  text-decoration: underline;
+  color: white;
+}
+
+.contact-item a:hover {
+  color: #3b82f6;
+}
+
+@media (min-width: 780px) {
+  .contact-text {
+    text-align: center;
+    font-size: 15px;
+    padding: 1rem;
+  }
+  .contact-item {
+    font-size: 15px;
+    margin: 0.5rem 1rem;
+  }
+  .contact-footer {
+    padding: 2rem 0rem;
+  }
+}
+
+@media (max-width: 779px) {
+  .contact-text {
+    width: 80%;
+    padding: 1.7rem;
+    font-size: 14px;
+  }
+  .contact-item {
+    font-size: 12px;
+    margin: 0.4rem 0.6rem;
+  }
+   .headh2 {
+    font-size: 2rem;
+    padding: 0 0.4rem;
+    border-bottom: 2px solid white;
+  }
+  .contact-footer {
+    padding: 1.5rem 0rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .contact-text {
+    width: 90%;
+    padding: 1.3rem;
+    font-size: 12px;
+  }
+  .contact-item {
+    font-size: 12px;
+    margin: 0.3rem 0.5rem;
+  }
+  .headh2 {
+    font-size: 1.6rem;
+    padding: 0 0.3rem;
+  }
+
+ .contact-footer {
+    padding: 1.3rem 0rem;
+  }
+}
