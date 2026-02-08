@@ -49,7 +49,11 @@
        padding: 1rem;
        font-size: 2.3rem;
        font-weight:400;
+<<<<<<< HEAD
        color: white;
+=======
+       color:white;
+>>>>>>> f2dcd453f62fca9169f3f488913eced231f40e7a
 }
 
 .navbar .buttons {

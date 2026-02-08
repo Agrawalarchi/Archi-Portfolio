@@ -48,7 +48,10 @@
 }
 
 .contact-item {
+<<<<<<< HEAD
   color:white;  
+=======
+>>>>>>> f2dcd453f62fca9169f3f488913eced231f40e7a
   display: flex;
   align-items: center;
   margin: 0.5rem 1rem;
